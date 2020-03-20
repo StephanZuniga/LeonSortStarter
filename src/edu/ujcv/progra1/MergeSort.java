@@ -29,7 +29,7 @@ public class MergeSort  implements SortTester{
 
         return merge(mergeSort(parteInferior),mergeSort(parteSuperior));
     }
-  
+
 
     public static int[] merge(int[] a, int[] b ){
         int [] c = new int[a.length + b.length];
