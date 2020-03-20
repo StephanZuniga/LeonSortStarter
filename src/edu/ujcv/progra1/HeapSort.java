@@ -14,16 +14,22 @@ public class HeapSort implements SortTester {
     }
 
     public static int[] heapSort(int[] array) {
+        public class HeapSort {
+            public void sort(int arr[]) {
+                int n = arr.length;
 
-        // cambiar priority queue por su propia implementacion!!
-        PriorityQueue <Integer> queue = new PriorityQueue<>();
-        for (Integer i: array) {
-            queue.add(i);
-        }
-        for (int i = 0; i < array.length; i++) {
-            array[i] = queue.remove();
-        }
-        return array;
-    }
+                for (int i = n / 2 - 1; i >= 0; i--)
+                    heapify(arr, n, i);
+
+
+                for (int i=n-1; i>=0; i--)
+                {
+
+                    int temp = arr[0];
+                    arr[0] = arr[i];
+                    arr[i] = temp;
+
+
+                }
 
 }
