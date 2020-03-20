@@ -10,11 +10,11 @@ public class RecursiveInsertionSort implements SortTester {
 
         return end - start;
     }
-    static void insertionSortRecursive(int arr[], int n) {
+    static void RecursiveInsertionSort(int arr[], int n) {
         if (n <= 1)
             return;
 
-        insertionSortRecursive( arr, n-1 );
+        RecursiveInsertionSort( arr, n-1 );
 
 
         int last = arr[n-1];
