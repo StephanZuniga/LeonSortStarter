@@ -4,17 +4,17 @@ public class RecursiveInsertionSort implements SortTester {
     @Override
     public long sort(int[] array) {
         long start = System.currentTimeMillis();
-        RecursiveInsertionSort(array);
+        insertionSortRecursive(array, array.length);
 
         long end = System.currentTimeMillis();
 
         return end - start;
     }
-    static void RecursiveInsertionSort(int arr[], int n) {
+    public static void insertionSortRecursive(int arr[], int n) {
         if (n <= 1)
             return;
 
-        RecursiveInsertionSort( arr, n-1 );
+        insertionSortRecursive( arr, n-1 );
 
 
         int last = arr[n-1];
