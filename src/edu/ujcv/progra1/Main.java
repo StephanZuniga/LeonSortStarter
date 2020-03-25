@@ -11,9 +11,9 @@ public class Main {
         }
 
         HeapSort h = new HeapSort();
-        h.heapSort(array);
-        //MergeSort m = new MergeSort();
-        //array = m.mergeSort(array);
+        //h.heapSort(array);
+        MergeSort m = new MergeSort();
+        array = m.mergeSort(array);
         //BubleSort b = new BubleSort();
         //array = b.bubleSort(array);
         //RecursiveInsertionSort ri = new RecursiveInsertionSort();
