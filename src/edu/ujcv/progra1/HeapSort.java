@@ -42,8 +42,7 @@ public class HeapSort implements SortTester {
                     arr[i] = arr[largest];
                     arr[largest] = swap;
 
-                    heapify(arr, n, largest);
-                }
+                    heapify(arr, n, largest);                }
             }
 
     static void printArray(int arr[])
